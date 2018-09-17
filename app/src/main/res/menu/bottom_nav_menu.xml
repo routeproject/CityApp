@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Location"
+        android:icon="@drawable/ic_location">
+    </item>
+
+    <item android:title="News"
+        android:icon="@drawable/ic_location">
+    </item>
+
+    <item android:title="Visa"
+        android:icon="@drawable/ic_location">
+    </item>
+
+    <item android:title="Booking"
+        android:icon="@drawable/ic_location">
+    </item>
+
+    <item android:title="Person"
+        android:icon="@drawable/ic_location">
+    </item>
+
+
+</menu>
