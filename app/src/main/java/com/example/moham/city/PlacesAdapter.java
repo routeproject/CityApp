@@ -75,7 +75,7 @@ public class PlacesAdapter extends RecyclerView.Adapter<PlacesAdapter.ViewHolder
     public  interface OnItemClickListener{
          void onClick(int position, Place place);
          //test
-        //get this2
+        //get this266
     }
 
 }
