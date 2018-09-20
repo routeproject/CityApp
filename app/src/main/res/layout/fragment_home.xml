@@ -7,6 +7,15 @@
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/discount_coupons_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISCOUNT COUPONS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="5dp"/>
     
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerview_coupons"
@@ -14,7 +23,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/discount_coupons_text"
         tools:listitem="@layout/item_coupons"
         app:layoutManager="android.support.v7.widget.LinearLayoutManager"
         android:orientation="horizontal">
