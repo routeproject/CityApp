@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity
         bottomNavigationViewEx.enableShiftingMode(false);
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setCheckedItem(R.id.nav_home);
     }
 
     @Override
@@ -75,13 +76,15 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         HomeFragment fragment = null;
+        CouponFragment fragment2 = null;
 
         if (id == R.id.nav_home) {
             fragment = new HomeFragment();
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,fragment).commit();
-        } else if (id == R.id.nav_coupons) {
-            //Handle Coupouns
 
+        } else if (id == R.id.nav_coupons) {
+            fragment2 = new CouponFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,fragment2).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

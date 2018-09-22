@@ -14,7 +14,6 @@ import com.example.moham.city.Model.Place;
 
 import java.util.ArrayList;
 
-
 /**
  * A simple {@link Fragment} subclass.
  */

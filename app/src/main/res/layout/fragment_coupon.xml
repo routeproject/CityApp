@@ -6,14 +6,16 @@
     tools:context="com.example.moham.city.CouponFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_offers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
-
+        tools:listitem="@layout/item_offers"
+        android:orientation="vertical"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
     </android.support.v7.widget.RecyclerView>
 
 
