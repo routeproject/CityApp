@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity
         bottomNavigationViewEx.enableShiftingMode(false);
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        navigationView.setCheckedItem(R.id.nav_home);
+        HomeFragment homeFragment = new HomeFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,homeFragment).commit();
     }
 
     @Override

@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.moham.city.CouponFragment">
+    tools:context="com.example.moham.city.CouponFragment"
+    android:layout_marginBottom="50dp">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -11,12 +12,13 @@
         android:id="@+id/recyclerview_offers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:listitem="@layout/item_offers"
         android:orientation="vertical"
-        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
-    </android.support.v7.widget.RecyclerView>
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_offers"></android.support.v7.widget.RecyclerView>
 
 
 </android.support.constraint.ConstraintLayout>
